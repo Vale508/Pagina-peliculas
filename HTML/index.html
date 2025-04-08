@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  
+    <div class="cuadro">
+        <div class="texto">
+          <h1>CINEMA MOVIE SHOP</h1>
+        </div>
+        <div class="Logo" id="myPanzoom">
+          <img src="../IMG/Logo.png" alt="Imagen de la tienda" class="f-panzoom__content">
+        </div>
+        <div class="seccion">
+          <a href="#">Épocas</a>
+          <a href="#">Categorías</a>
+          <a href="#">Accesorios</a>
+          <a href="#">Material</a>
+        </div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.umd.js"></script>
+      <script>
+        const container = document.getElementById("myPanzoom");
+    
+        const instance = new Panzoom(container, {
+          panMode: 'mousemove',
+          mouseMoveFactor: 1.25,
+          click: false,
+          wheel: false
+        });
+    
+        container.addEventListener("mouseenter", (event) => {
+          if (!event.buttons) {
+            instance.zoomToCover(event);
+          }
+        });
+    
+        container.addEventListener("mouseleave", () => {
+          instance.zoomToFit();
+        });
+      </script>
+    <div class="nuevo-encabezado">
+        <h2>Epoca 1701-1800</h2>
+    </div>
+    <div class="primeras">
+        <div class="container">
+            <div class="card">
+                <div class="categoria-terror">
+                    <h2>Categoria: Terror</h2>
+                </div>
+                <img src="../IMG/Terror1.jpeg" alt="">
+            </div>
+            <div class="card">
+                <div class="accesorio">
+                    <h2>Accesorios</h2>
+                </div>
+                <img src="../IMG/AccTerror.jpeg" alt="">
+            </div>
+            <div class="card">
+                <div class="material">
+                    <h2>Material</h2>
+                </div>
+                <img src="../IMG/Tela terror.webp" alt="">
+            </div>
+        </div>
+
+        <div class="primeras">
+            <div class="container">
+                <div class="card">
+                    <div class="categoria-accion">
+                        <h2>Categoria: Accion</h2>
+                    </div>
+                    <img src="../IMG/Accion1.jpg" alt="">
+                </div>
+                <div class="card">
+                    <div class="accesorio2">
+                        <h2>Accesorios</h2>
+                    </div>
+                    <img src="../IMG/accAccion.jpg" alt="">
+                </div>
+                <div class="card">
+                    <div class="material2">
+                        <h2>Material</h2>
+                    </div>
+                    <img src="../IMG/Tela accion.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="primeras">
+            <div class="container">
+                <div class="card">
+                    <div class="categoria-comedia">
+                        <h2>Categoria: Comedia</h2>
+                    </div>
+                    <img src="../IMG/Comedia1.jpg" alt="">
+                </div>
+                <div class="card">
+                    <div class="accesorio3">
+                        <h2>Accesorios</h2>
+                    </div>
+                    <img src="../IMG/Acc Comedia.jpeg" alt="">
+                </div>
+                <div class="card">
+                    <div class="material3">
+                        <h2>Material</h2>
+                    </div>
+                    <img src="../IMG/Tela comedia.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="nuevo-encabezado">
+            <h2>Epoca 1801-1900</h2>
+        </div>
+        <div class="segundas">
+            <img src="../IMG/terror1700.jpg" alt="" class="img1">
+            <img src="../IMG/Terror2.jpeg" alt="" class="img2">
+            <img src="../IMG/Tela terror2.jpg" alt="" class="img3">
+            <img src="../IMG/Accion2.webp" alt="" class="img1">
+            <img src="../IMG/Acc accion3.jpeg" alt="" class="img2">
+            <img src="../IMG/Tela accion2.webp" alt="" class="img3">
+            <img src="../IMG/Comedia2.webp" alt="" class="img1">
+            <img src="../IMG/Acc comedia3.jpeg" alt="" class="img2">
+            <img src="../IMG/Telacomedia2.webp" alt="" class="img3">
+        </div>
+        <div class="nuevo-encabezado">
+            <h2>Epoca 1901-2000</h2>
+        </div>
+        <div id="contenedor2">
+            <div class="terceras">
+                <img src="../IMG/Terror3.avif" alt="Imagen 1">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/Acc Terror3.jpeg" alt="Imagen 2">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/Tela terror3.jpg" alt="Imagen 3">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/accion3.jpg" alt="Imagen 4">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/Acc accion4.jpeg" alt="Imagen 5">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/Tela accion3.avif" alt="Imagen 6">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/comedia3.webp" alt="Imagen 7">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/Acc comedia4 (2).jpeg" alt="Imagen 8">
+            </div>
+            <div class="terceras">
+                <img src="../IMG/Telacomedia3.jpg" alt="Imagen 9">
+            </div>
+        </div>
+        <script src="../Js/mijs.js"></script>
+        <footer>
+            <div class="footer-container">
+                <div class="contact">
+                    <h3>Contacto</h3>
+                    <p>Correo: cinemamovieshop@gmail.com</p>
+                    <p>Teléfono: 3108425428</p>
+                </div>
+                <div class="social-media">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h3>Información</h3>
+                    <p>&copy; 2025 Cinema movie shop. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
